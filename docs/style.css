@@ -1,0 +1,177 @@
+body {
+  padding: 0%;
+  margin: 0%;
+  /*background: #f9f9f9;*/
+  background: lightcoral;
+  width: 100%;
+  height: auto;
+}
+nav
+{
+  position: fixed;
+  top: 0;
+  background: orange;
+  width: 100%;
+  height: 100px;
+}
+nav>div
+{
+  background: lightyellow;
+  width: 100%;
+  height: 40%;
+  margin-bottom: 5px;
+}
+
+header
+{
+  margin-top: 120px;
+  margin-bottom: 10px;
+  background: lightgreen;
+  width: 100%;
+  height: 100px;
+}
+main
+{
+  float: left; 
+  background: lightblue;
+  width: 70%;
+  height: auto;
+
+  padding: 5px;
+}
+
+section#popular
+{
+  background: brown;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+div.sectionHeader
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: yellow;
+  width: 100%;
+  height: 25px;
+}
+div.sectionHeader>div
+{
+  background: blueviolet;
+  height: 20px;
+  width: 100px;
+}
+
+
+div.sectionPost
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background: lightyellow;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 5px;
+}
+div.sectionPost>img
+{
+  background: midnightblue;
+  width: 75px;
+  height: 75px;
+}
+div.sectionPost>div:first-of-type
+{
+
+  background: blueviolet;
+  width: 80%;
+  height: 75px;
+}
+div.sectionPost>div:first-of-type>div
+{
+
+  background: red;
+  width: 90%;
+  height: 25px;
+}
+
+div.sectionPost>div:last-of-type
+{
+  background: blueviolet;
+  width: 75px;
+  height: 75px;
+}
+section#today
+{
+  background: brown;
+  width: 100%;
+  height: auto;
+}
+
+aside
+{
+  background: black;
+  width: 25%;
+  height: 100%;
+  float: right;
+  margin-right: 2.5%;
+}
+div#asideTop
+{
+  background: lightyellow;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+div#asideTop>div
+{
+  background-color: blueviolet;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 5px;
+
+}
+div#asideChat
+{
+  background: lightyellow;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+
+}
+div#asideChat>div#asideChatHeader
+{
+  background-color: blueviolet;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 5px;
+}
+div.asidePost
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background: violet;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 5px;
+}
+div.asidePost>img
+{
+  background-color: midnightblue;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+div.asidePost>div
+{
+  background-color: teal;
+  width: 75%;
+  height: 75px;
+}
