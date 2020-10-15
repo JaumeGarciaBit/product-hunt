@@ -1,39 +1,145 @@
 body {
   padding: 0%;
   margin: 0%;
+
   /*background: #f9f9f9;*/
-  background: lightcoral;
+  background-color: coral;
   width: 100%;
+  max-width: 800px;
   height: auto;
 }
+a
+{
+  text-decoration:none;
+  color: #7e6b6b;
+}
+p
+{margin: 0;}
 nav
 {
   position: fixed;
   top: 0;
-  background: orange;
+  background: white;
   width: 100%;
-  height: 100px;
+  height: auto;
 }
 nav>div
 {
-  background: lightyellow;
+  color: #7e6b6b;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
   width: 100%;
-  height: 40%;
-  margin-bottom: 5px;
+  height: 40px;
+}
+nav>div>img
+{
+  height: 120%;
+  width: auto;
+}
+nav>div>input
+{
+  border:solid 1px #EBEBEB;
+  border-radius: 4px;
+  background-image: url("./images/search.png");
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  width: 80%;
+  height: 60%;
+}
+
+nav>div:last-of-type
+{
+
+  padding-right: 0%;
+
+  border-top: solid 1px #EBEBEB;
+  border-bottom: solid 1px #EBEBEB;
+
+}
+nav>div:last-of-type>ul
+{
+  margin: 0%;
+  padding: 0px;
+  width: 94%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+nav>div:last-of-type>ul>li
+{
+  font-size: 14px;
+}
+nav>div:last-of-type>ul>div>img
+{
+  height: 16px;
 }
 
 header
 {
-  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
   margin-bottom: 10px;
-  background: lightgreen;
+  background: white;
   width: 100%;
-  height: 100px;
+  height: 50px;
+
+  border: solid 1px #EBEBEB;
 }
+
+header>*
+{
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 80%;
+  width: auto;
+}
+header>p
+{
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  text-overflow: ellipsis;
+}
+header>p:last-of-type
+{
+  color: #7e6b6b;
+}
+
+header>input
+{
+  height: 26px;
+  width: 15%;
+  border: solid 1px #EBEBEB;
+}
+header>button
+{
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+
+  background-color: rgb(202, 86, 9);
+  height: 30px;
+  width: 12%;
+  border: solid 1px #EBEBEB;
+}
+
+img.crossIcon
+{
+  margin-right: 5px;
+  margin-left: 30px;
+  height: 13px;
+  width: auto;
+}
+
 main
 {
   float: left; 
-  background: lightblue;
   width: 70%;
   height: auto;
 
@@ -42,29 +148,36 @@ main
 
 section#popular
 {
-  background: brown;
-  width: 100%;
+  width: 97%;
   height: auto;
-  margin-bottom: 5px;
+
+  padding-left: 3%;
+  padding-top: 10px;
+  margin-bottom: 10px;
+
+  border: solid 1px #EBEBEB;
+  background-color: white;
+  border-radius: 4px;
 }
 
 div.sectionHeader
 {
+  padding-left: 2%;
+  padding-right: 2%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  background: yellow;
-  width: 100%;
+  border-bottom: solid 1px #EBEBEB;
+  width: 96%;
   height: 25px;
 }
 div.sectionHeader>div
 {
-  background: blueviolet;
-  height: 20px;
-  width: 100px;
+  height: 100%;
+  width: 200px;
 }
-
 
 div.sectionPost
 {
@@ -73,43 +186,128 @@ div.sectionPost
   justify-content: space-evenly;
   align-items: center;
 
-  background: lightyellow;
   width: 100%;
-  height: 100px;
+  height: 120px;
   margin-bottom: 5px;
+
+  border-bottom: solid 1px #EBEBEB;
 }
 div.sectionPost>img
 {
   background: midnightblue;
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 80px;
 }
 div.sectionPost>div:first-of-type
 {
-
-  background: blueviolet;
-  width: 80%;
-  height: 75px;
+  padding-left: 10px;
+  width: 70%;
+  height: 80px;
 }
+div.sectionPost>div:first-of-type>p:first-of-type
+{
+  width: 90%;
+  height: 30px;
+  font-size: 20px;
+}
+div.sectionPost>div:first-of-type>p:last-of-type
+{
+  width: 90%;
+  height: 20px;
+  font-size: 13px;
+}
+
+
 div.sectionPost>div:first-of-type>div
 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
-  background: red;
   width: 90%;
-  height: 25px;
+  height: 30px;
+}
+p.likes, p.comments
+{
+  font-size: 12px;
+
+  background-repeat: no-repeat;
+  border: solid 1px lightgray;
+  background-color: #EBEBEB;
+  border-radius: 2px;
+  
+  padding-right: 5px;
+  padding-left: 15px;
+}
+p.likes
+{
+  background-image: url("./images/votes.png");
+}
+p.comments
+{
+  color: gray;
+  background-image: url("./images/comments.png");
+}
+
+div.sectionPost>div:first-of-type>div>*
+{
+  margin-right: 10px;
 }
 
 div.sectionPost>div:last-of-type
 {
-  background: blueviolet;
-  width: 75px;
-  height: 75px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100px;
+  height: 80px;
+  margin-right: 10px;
+
 }
+p.tag
+{
+  font-size: 10px;
+
+  background-repeat: no-repeat;
+  border: none;
+  background-color: lightgray;
+  border-radius: 4px;
+  
+  padding: 3px;
+}
+p.moreTags
+{
+  margin-left: 0px;
+  line-height: 15px;
+  font-size: 11px;
+  color: gray;
+}
+
+
 section#today
 {
-  background: brown;
-  width: 100%;
+  width: 97%;
   height: auto;
+
+  padding-left: 3%;
+  padding-top: 10px;
+  margin-bottom: 10px;
+
+  border: solid 1px #EBEBEB;
+  background-color: white;
+  border-radius: 4px;
+}
+section#today>div.sectionHeader>div
+{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  width:auto;
+}
+section#today>div.sectionHeader>div>p:last-of-type
+{
+  margin-left: 10px;
+  color:grey
 }
 
 aside
@@ -118,7 +316,6 @@ aside
   width: 25%;
   height: 100%;
   float: right;
-  margin-right: 2.5%;
 }
 div#asideTop
 {
