@@ -90,6 +90,7 @@ header
   height: 50px;
 
   border: solid 1px #EBEBEB;
+  border-radius: 4px;
 }
 
 header>*
@@ -142,8 +143,6 @@ main
   float: left; 
   width: 70%;
   height: auto;
-
-  padding: 5px;
 }
 
 section#popular
@@ -307,45 +306,89 @@ section#today>div.sectionHeader>div
 section#today>div.sectionHeader>div>p:last-of-type
 {
   margin-left: 10px;
-  color:grey
+  color:grey;
 }
 
 aside
 {
-  background: black;
   width: 25%;
   height: 100%;
   float: right;
 }
 div#asideTop
 {
-  background: lightyellow;
-  width: 100%;
-  height: 100px;
+  background: white;
+  width: 95%;
+  height: 120px;
   margin-bottom: 10px;
+
+  border: solid 1px #EBEBEB;
+  background-color: white;
+  border-radius: 4px;
+  padding-left: 5%;
 }
 div#asideTop>div
 {
-  background-color: blueviolet;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 18px;
+
   width: 100%;
   height: 25px;
+  padding-top: 5px;
   margin-bottom: 5px;
-
 }
+
+div#asideTop>p
+{
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 10px;
+}
+button#asideKittyButton
+{
+  border: solid 1px #EBEBEB;
+  border-radius: 4px;
+  color: white;
+  font-size: 11px;
+
+  height: 30px;
+  width: 95%;
+  padding-left: 15px;
+  
+  background-color: rgb(202, 86, 9);
+  background-image: url("./images/hashIcon.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position-x: 8px;
+  background-position-y: 4px;
+}
+
 div#asideChat
 {
-  background: lightyellow;
-  width: 100%;
+  border: solid 1px #EBEBEB;
+  background-color: white;
+  border-radius: 4px;
+  padding-left: 5%;
+  
+  width: 95%;
   height: 100%;
   margin-bottom: 10px;
 
 }
 div#asideChat>div#asideChatHeader
 {
-  background-color: blueviolet;
+  font-weight: bold;
+  font-size: 12px;
   width: 100%;
   height: 40px;
   margin-bottom: 5px;
+  line-height: 40px;
+
+  border-bottom: solid 1px #EBEBEB;
+
 }
 div.asidePost
 {
@@ -356,7 +399,7 @@ div.asidePost
 
   background: violet;
   width: 100%;
-  height: 100px;
+  height: auto;
   margin-bottom: 5px;
 }
 div.asidePost>img
@@ -368,7 +411,32 @@ div.asidePost>img
 }
 div.asidePost>div
 {
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: teal;
   width: 75%;
-  height: 75px;
+  height: auto;
+}
+div.asidePost>div>p:first-of-type
+{
+  font-weight: bold;
+  font-size: 13px;
+}
+div.asidePost>div>p:nth-of-type(2)
+{
+  color:grey;
+  font-size: 13px;
+}
+
+p.remindButton
+{
+  font-size: 11px;
+  text-align: center;
+  border: none;
+  background-color: lightgray;
+  border-radius: 4px;
+  
+  width: 70%;
+  padding: 0px;
+  
 }
